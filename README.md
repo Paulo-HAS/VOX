@@ -1,2 +1,2 @@
 # VOX
-Repositório d
+Paulo Henrique, João Victor e Rafael de Paula
