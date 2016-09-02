@@ -1,0 +1,31 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/screens.rpy", line 686, in script
+    init +1 python:
+  File "game/screens.rpy", line 689, in <module>
+    renpy.image (gal_item + " butt", im.Scale(ImageReference(gal_item), thumbnail_x, thumbnail_y))
+Exception: Expected an image, but got a general displayable.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/screens.rpy", line 686, in script
+    init +1 python:
+  File "C:\renpy-6.99.10-sdk\renpy\ast.py", line 806, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\renpy-6.99.10-sdk\renpy\python.py", line 1577, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/screens.rpy", line 689, in <module>
+    renpy.image (gal_item + " butt", im.Scale(ImageReference(gal_item), thumbnail_x, thumbnail_y))
+  File "C:\renpy-6.99.10-sdk\renpy\display\im.py", line 668, in __init__
+    im = image(im)
+  File "C:\renpy-6.99.10-sdk\renpy\display\im.py", line 1570, in image
+    return image(arg.target, loose=loose, **properties)
+  File "C:\renpy-6.99.10-sdk\renpy\display\im.py", line 1585, in image
+    raise Exception("Expected an image, but got a general displayable.")
+Exception: Expected an image, but got a general displayable.
+
+Windows-8-6.2.9200
+Ren'Py 6.99.10.1227
+VOX 0.0
